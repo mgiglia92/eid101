@@ -37,9 +37,12 @@ int main(void)
     */
     while (true)
     {
-        cyw43_arch_gpio_put(0, cyw43_arch_gpio_get(0)); //Flip the state of the LED
-        cout << "Print this indefinitely\n";
-        sleep_ms(50); // sleep the processor for 50 ms
+        cyw43_arch_gpio_put(0, !cyw43_arch_gpio_get(0)); //Flip the state of the LED
+        int pot_val = adc_read(); //Read the potentiometer, notice that 
+        int btn_val = gpio_get(RCC_PUSHBUTTON); //Get the state of gpio pin at RCC_PUSHBUTTON
+        cout << "ADC raw val:" << pot_val << " pushbutton val: " << btn_val << "\n";
+
+        sleep_ms(100); // sleep the processor for 50 ms
         // busy_wait_us(1000); // Waste processor cycles to wait 1000 micro seconds. Similar to sleep but not identical!
 
     }
