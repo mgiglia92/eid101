@@ -20,6 +20,7 @@
 - A new document written that has the following. Don't forget to state who you worked with on this activity and put a relevant heading on the document.
 - Three potential solutions with hand-sketches
     - An Engineering Decision Matrix ranking the solutions and selection for prototype 
+    - You should have at **LEAST** 4 criteria
 - Two required sub-problems that need to be solved
     - A short discussion about why these are valid sub-problems, what is the NEED?
     - A short discussion of the brainstorming process for each sub problem
